@@ -10,20 +10,20 @@ int main()
         int x,y;
         cin >> x >> y;
 
-        int s = ceil(1.0*y/2);
+        int cell = ceil(1.0*y/2);
 
-        if(s==0) s+= ceil(1.0*x/15);
+        if(cell==0) cell+= ceil(1.0*x/15);
         else
         {
-            int a = 15*s - 4*y;
+            int val = 15*s - 4*y;
 
             if(x>a)
             {
-                x-=a;
-                s+= ceil(1.0*x/15);
+                x-=val;
+                cell+= ceil(1.0*x/15);
             }
         }
-        cout << s << endl;
+        cout << cell << endl;
     }
     return 0;
 }
