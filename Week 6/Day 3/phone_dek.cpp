@@ -17,7 +17,7 @@ int main()
         {
             int val = 15*s - 4*y;
 
-            if(x>a)
+            if(x>val)
             {
                 x-=val;
                 cell+= ceil(1.0*x/15);
